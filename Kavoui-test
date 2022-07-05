@@ -63,7 +63,7 @@ local themeStyles = {
         TextColor = Color3.fromRGB(255,255,255),
         ElementColor = Color3.fromRGB(20, 20, 20)
     },
-    DiscordTheme = {
+    LightTheme = {
         SchemeColor = Color3.fromRGB(114,137,218),
         Background = Color3.fromRGB(66,69,73),
         Header = Color3.fromRGB(40,43,48),
@@ -153,8 +153,8 @@ function Kavo.CreateLib(kavName, themeList)
     end
     if themeList == "DarkTheme" then
         themeList = themeStyles.DarkTheme
-    elseif themeList == "DiscordTheme" then
-        themeList = themeStyles.DiscordTheme
+    elseif themeList == "LightTheme" then
+        themeList = themeStyles.LightTheme
     elseif themeList == "BloodTheme" then
         themeList = themeStyles.BloodTheme
     elseif themeList == "GrapeTheme" then
