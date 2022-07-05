@@ -105,7 +105,7 @@ local themeStyles = {
         TextColor = Color3.fromRGB(119, 209, 138),
         ElementColor = Color3.fromRGB(24, 24, 24)
     },
-    Synapse = {
+    Synapse = { -- this theme is now become dark blue theme
         SchemeColor = Color3.fromRGB(0,0,255),
         Background = Color3.fromRGB(0,0,205),
         Header = Color3.fromRGB(0,0,139),
