@@ -63,12 +63,12 @@ local themeStyles = {
         TextColor = Color3.fromRGB(255,255,255),
         ElementColor = Color3.fromRGB(20, 20, 20)
     },
-    LightTheme = {
-        SchemeColor = Color3.fromRGB(150, 150, 150),
-        Background = Color3.fromRGB(255,255,255),
-        Header = Color3.fromRGB(200, 200, 200),
-        TextColor = Color3.fromRGB(0,0,0),
-        ElementColor = Color3.fromRGB(224, 224, 224)
+    DiscordTheme = {
+        SchemeColor = Color3.fromRGB(114,137,218),
+        Background = Color3.fromRGB(66,69,73),
+        Header = Color3.fromRGB(40,43,48),
+        TextColor = Color3.fromRGB(255,255,255),
+        ElementColor = Color3.fromRGB(54,57,62)
     },
     BloodTheme = {
         SchemeColor = Color3.fromRGB(227, 27, 27),
@@ -114,8 +114,8 @@ local themeStyles = {
     },
     Serpent = {
         SchemeColor = Color3.fromRGB(0, 166, 58),
-        Background = Color3.fromRGB(145, 80, 0),
-        Header = Color3.fromRGB(143, 71, 3),
+        Background = Color3.fromRGB(31, 41, 43),
+        Header = Color3.fromRGB(22, 29, 31),
         TextColor = Color3.fromRGB(255,255,255),
         ElementColor = Color3.fromRGB(22, 29, 31)
     }
