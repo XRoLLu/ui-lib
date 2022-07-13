@@ -2,7 +2,7 @@ local library = {
 		flags = { },
 		items = { }
 	}
-    if _G.Color == nil then _G.Color = Color3.fromRGB(5, 0, 156) end
+    if _G.Color == nil then _G.Color = Color3.fromRGB(80, 245, 245) end
     if _G.Color2 == nil then _G.Color2 = Color3.fromRGB(0, 151, 156) end
     -- Services
 	local players = game:GetService("Players")
@@ -24,7 +24,7 @@ local library = {
         tilesize = 50,
         cursor = false,
         cursorimg = "https://t0.rbxcdn.com/42f66da98c40252ee151326a82aab51f",
-        backgroundcolor = Color3.fromRGB(1, 3, 48),
+        backgroundcolor = Color3.fromRGB(20, 20, 20),
         tabstextcolor = Color3.fromRGB(240, 240, 240),
         bordercolor = Color3.fromRGB(60, 60, 60),
         accentcolor = _G.Color,
