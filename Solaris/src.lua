@@ -1,4 +1,4 @@
-
+-- i kinda customize the blue theme even better
 local Solaris = Instance.new("ScreenGui")
 Solaris.Name = "dosage's solaris gui"
 Solaris.Parent = game.CoreGui
@@ -91,15 +91,15 @@ local SolarisLib = {
             Button = Color3.fromRGB(50, 80, 250),
             ButtonHold = Color3.fromRGB(41,41,56),
             Toggle = Color3.fromRGB(40,40,55),
-            ToggleFrame = Color3.fromRGB(65,65,80),
+            ToggleFrame = Color3.fromRGB(0,0,139),
             ToggleToggled = Color3.fromRGB(0,206,209),
             Slider = Color3.fromRGB(40,40,55),
-            SliderBar = Color3.fromRGB(35, 35, 50),
+            SliderBar = Color3.fromRGB(0,0,139),
             SliderInc = Color3.fromRGB(70, 70, 85),
-            Dropdown = Color3.fromRGB(40,40,55),
-            DropdownItem = Color3.fromRGB(40,40,55),
+            Dropdown = Color3.fromRGB(0,0,139),
+            DropdownItem = Color3.fromRGB(65,105,225),
             Textbox = Color3.fromRGB(40,40,55),
-            TextboxFrame = Color3.fromRGB(35, 35, 50),
+            TextboxFrame = Color3.fromRGB(0,0,139),
             Colorpicker = Color3.fromRGB(40,40,55),
             Label = Color3.fromRGB(40,40,55),
             Bind = Color3.fromRGB(40,40,55)
