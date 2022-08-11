@@ -101,7 +101,7 @@ local SolarisLib = {
             Textbox = Color3.fromRGB(0,0,255),
             TextboxFrame = Color3.fromRGB(0,0,139),
             Colorpicker = Color3.fromRGB(40,40,55),
-            Label = Color3.fromRGB(40,40,55),
+            Label = Color3.fromRGB(0, 29, 252),
             Bind = Color3.fromRGB(40,40,55)
         },
         Red = {
