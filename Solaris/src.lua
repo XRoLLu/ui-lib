@@ -1,4 +1,4 @@
--- This User Interface Library is brought to you by Solaris Software.
+
 local Solaris = Instance.new("ScreenGui")
 Solaris.Name = "dosage's solaris gui"
 Solaris.Parent = game.CoreGui
@@ -82,17 +82,17 @@ local SolarisLib = {
             Label = Color3.fromRGB(47,49,54),
             Bind = Color3.fromRGB(47,49,54)
         },
-        Blue = {
-            MainFrame = Color3.fromRGB(35, 35, 50),
-            TopBar = Color3.fromRGB(40, 40, 55),
+        Blue = { -- i kinda customize this blue theme
+            MainFrame = Color3.fromRGB(0, 0, 100),
+            TopBar = Color3.fromRGB(0,0,205),
             TextColor =  Color3.fromRGB(255,255,255),
-            Menu = Color3.fromRGB(47, 47, 62),
-            TabToggled = Color3.fromRGB(53,53,68),
-            Button = Color3.fromRGB(40,40,55),
+            Menu = Color3.fromRGB(60, 60, 240),
+            TabToggled = Color3.fromRGB(37, 37, 245),
+            Button = Color3.fromRGB(50, 80, 250),
             ButtonHold = Color3.fromRGB(41,41,56),
             Toggle = Color3.fromRGB(40,40,55),
             ToggleFrame = Color3.fromRGB(65,65,80),
-            ToggleToggled = Color3.fromRGB(64, 64, 120),
+            ToggleToggled = Color3.fromRGB(0,206,209),
             Slider = Color3.fromRGB(40,40,55),
             SliderBar = Color3.fromRGB(35, 35, 50),
             SliderInc = Color3.fromRGB(70, 70, 85),
