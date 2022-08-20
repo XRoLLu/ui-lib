@@ -32,7 +32,7 @@ folder:AddList({text = "Dropdown", values = {"One","Two","Three"}, callback = fu
 end})
 
 folder:AddBind({text = "Toggle UI", key = "RightShift", callback = function() 
-library:Close() -- idk why this not working
+Library:Close() 
 end})
 
 folder:AddSlider({text = 'Slider Walkspeed', min = 16, max = 100, incrementalMode = true, callback = function(value) 
