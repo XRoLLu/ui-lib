@@ -31,7 +31,7 @@ folder:AddList({text = "Dropdown", values = {"One","Two","Three"}, callback = fu
     end
 end})
 
-Window:AddBind({text = "Toggle UI", key = "RightShift", callback = function() 
+folder:AddBind({text = "Toggle UI", key = "RightShift", callback = function() 
 library:Close() -- idk why this not working
 end})
 
