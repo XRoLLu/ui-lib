@@ -3,19 +3,25 @@
 ```lua
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/XRoLLu/ui-lib/main/uwuware/src.lua"))(); 
 
-local Window = Library:CreateWindow("uwuware lib")
+local Window = Library:CreateWindow("uwuware lib") -- window
 
-local folder = Window:AddFolder("all example") -- tab
+local folder = Window:AddFolder("example") -- tab
 
-folder2:AddButton({text = "Button", callback = function() 
+folder:AddLabel({text = "Label"})
+
+folder:AddButton({text = "Button", callback = function() 
     print("bUTToN")
 end})
 
-folder:AddToggle({text = "The Toggle", callback = function(value) 
-print(value)
+folder:AddToggle({text = "The Toggle 1", state = false, callback = function(value) 
+	print(value)
 end})
 
-folder4:AddList({text = "Dropdown", values = {"One","Two","Three"}, callback = function(Name)
+folder:AddToggle({text = "The Toggle 2", state = true, callback = function(value) 
+	print(value)
+end})
+
+folder:AddList({text = "Dropdown", values = {"One","Two","Three"}, callback = function(Name)
     if Name == "One" then
 		print("selected one")
 	elseif Name == "Two" then
@@ -23,6 +29,10 @@ folder4:AddList({text = "Dropdown", values = {"One","Two","Three"}, callback = f
 	elseif Name == "Three" then
 		print("slected three")
     end
+end})
+
+Window:AddBind({text = "Toggle UI", key = "RightShift", callback = function() 
+library:Close() -- idk why this not working
 end})
 
 folder:AddSlider({text = 'Slider Walkspeed', min = 16, max = 100, incrementalMode = true, callback = function(value) 
