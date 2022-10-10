@@ -12,8 +12,8 @@ local tweeninfo = TweenInfo.new
 local utility = {}
 
 -- themes
-local objects = {} -- blue themes
-local themes = { -- green themes
+local objects = {}
+local themes = { -- blue themes
 	Background = Color3.fromRGB(0, 3, 100), 
 	Glow = Color3.fromRGB(0, 53, 255), 
 	Accent = Color3.fromRGB(0, 10, 255), 
