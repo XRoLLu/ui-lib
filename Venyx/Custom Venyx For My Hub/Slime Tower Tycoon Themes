@@ -14,11 +14,11 @@ local utility = {}
 -- themes
 local objects = {}
 local themes = { -- green themes
-	Background = Color3.fromRGB(0, 44, 3), 
-	Glow = Color3.fromRGB(0, 255, 0), 
-	Accent = Color3.fromRGB(0, 200, 53), 
-	LightContrast = Color3.fromRGB(0, 65, 0), 
-	DarkContrast = Color3.fromRGB(0, 23, 4),  
+	Background = Color3.fromRGB(24, 24, 24), 
+	Glow = Color3.fromRGB(0, 0, 0), 
+	Accent = Color3.fromRGB(31, 121, 7), 
+	LightContrast = Color3.fromRGB(20, 20, 20), 
+	DarkContrast = Color3.fromRGB(14, 14, 14),  
 	TextColor = Color3.fromRGB(255, 255, 255)
 }
 
@@ -669,7 +669,7 @@ do
 			Size = UDim2.new(1, 0, 0, 30),
 			ZIndex = 2,
 			Image = "rbxassetid://5028857472",
-			ImageColor3 = themes.DarkContrast,
+			ImageColor3 = Color3.fromRGB(0, 90, 0),
 			ScaleType = Enum.ScaleType.Slice,
 			SliceCenter = Rect.new(2, 2, 298, 298)
 		}, {
