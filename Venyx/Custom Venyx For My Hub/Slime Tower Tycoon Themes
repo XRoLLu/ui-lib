@@ -239,7 +239,7 @@ do
 				}),
 				utility:Create("ImageLabel", {
 					Name = "Pages",
-					BackgroundTransparency = 0.5,
+					BackgroundTransparency = 1,
 					ClipsDescendants = true,
 					Position = UDim2.new(0, 0, 0, 38),
 					Size = UDim2.new(0, 126, 1, -38),
