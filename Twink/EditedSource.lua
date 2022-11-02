@@ -674,7 +674,7 @@ function UILibrary.Load(GUITitle)
 			FlatRight.Size = UDim2.new(0,5,1,0)
 			FlatRight.Parent = ToggleRightSide
 			
-			EffectFrame.BackgroundColor3 = ThisToggle and Color3.fromRGB(0,255,109) or Color3.fromRGB(255,160,160)
+			EffectFrame.BackgroundColor3 = ThisToggle and Color3.fromRGB(0,255,0) or Color3.fromRGB(0,0,0)
 			EffectFrame.Position = UDim2.new(1,-22,0.2,0)
 			EffectFrame.Size = UDim2.new(0,2,0.6,0)
 			EffectFrame.Parent = ToggleContainer
