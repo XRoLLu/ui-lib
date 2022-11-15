@@ -2234,7 +2234,7 @@ function DiscordLib:Window(text)
 				Icon.Position = UDim2.new(0, 8, 0, 8)
 				Icon.Size = UDim2.new(0, 13, 0, 13)
 				Icon.Image = ""
-				Icon.ImageColor3 = Color3.fromRGB(67,181,129)
+				Icon.ImageColor3 = Color3.fromRGB(114, 118, 125)
 				
 				Toggle.MouseButton1Click:Connect(function()
 					if toggled == false then
@@ -2254,7 +2254,7 @@ function DiscordLib:Window(text)
 							TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 							{ImageTransparency = 1}
 						):Play()
-						Icon.Image = ""
+						Icon.Image = "http://www.roblox.com/asset/?id=6023426926"
 						wait(.1)
 						TweenService:Create(
 							Icon,
@@ -2265,12 +2265,12 @@ function DiscordLib:Window(text)
 						TweenService:Create(
 							Icon,
 							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{ImageColor3 = Color3.fromRGB(67,181,129)}
+							{ImageColor3 = Color3.fromRGB(114, 118, 125)}
 						):Play()
 						TweenService:Create(
 							ToggleFrame,
 							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{BackgroundColor3 = Color3.fromRGB(67,181,129)}
+							{BackgroundColor3 = Color3.fromRGB(114, 118, 125)}
 						):Play()
 						ToggleFrameCircle:TweenPosition(UDim2.new(0.234999999, -5, 0.133000001, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 						TweenService:Create(
