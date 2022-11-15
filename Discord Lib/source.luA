@@ -2234,7 +2234,7 @@ function DiscordLib:Window(text)
 				Icon.Position = UDim2.new(0, 8, 0, 8)
 				Icon.Size = UDim2.new(0, 13, 0, 13)
 				Icon.Image = ""
-				Icon.ImageColor3 = Color3.fromRGB(56, 58, 61)
+				Icon.ImageColor3 = Color3.fromRGB(67,181,129)
 				
 				Toggle.MouseButton1Click:Connect(function()
 					if toggled == false then
@@ -2265,12 +2265,12 @@ function DiscordLib:Window(text)
 						TweenService:Create(
 							Icon,
 							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{ImageColor3 = Color3.fromRGB(56, 58, 61)}
+							{ImageColor3 = Color3.fromRGB(67,181,129)}
 						):Play()
 						TweenService:Create(
 							ToggleFrame,
 							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{BackgroundColor3 = Color3.fromRGB(56, 58, 61)}
+							{BackgroundColor3 = Color3.fromRGB(67,181,129)}
 						):Play()
 						ToggleFrameCircle:TweenPosition(UDim2.new(0.234999999, -5, 0.133000001, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 						TweenService:Create(
