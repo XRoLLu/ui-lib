@@ -66,9 +66,9 @@ finity.dark_theme = { -- dark
 	category_button_background = Color3.fromRGB(63, 62, 65),
 	category_button_border = Color3.fromRGB(72, 71, 74),
 
-	checkbox_checked = Color3.fromRGB(132, 255, 130),
-	checkbox_outer = Color3.fromRGB(255, 130, 130),
-	checkbox_inner = Color3.fromRGB(255, 130, 130),
+	checkbox_checked = Color3.fromRGB(0, 255, 0),
+	checkbox_outer = Color3.fromRGB(255, 0, 0),
+	checkbox_inner = Color3.fromRGB(200, 0, 0),
 
 	slider_color = Color3.fromRGB(177, 177, 177),
 	slider_color_sliding = Color3.fromRGB(132, 255, 130),
