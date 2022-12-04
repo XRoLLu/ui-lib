@@ -230,9 +230,9 @@ function finity.new(isdark, gprojectName, thinProject)
 		BackgroundColor3 = theme.main_container,
 		BorderSizePixel = 0,
 		Position = UDim2.new(0.5, 0, 0.5, 0),
-		Size = UDim2.new(0, 800, 0, 300),
+		Size = UDim2.new(0, 600, 0, 300),
 		ZIndex = 2,
-		ImageTransparency = 1
+		ImageTransparency = 0.8
     })
     
     self2.modal = self:Create("TextButton", {
