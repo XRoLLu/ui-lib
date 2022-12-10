@@ -226,7 +226,7 @@ function finity.new(isdark, gprojectName, thinProject)
 		Active = true,
 		Name = "Container",
 		AnchorPoint = Vector2.new(0.5, 0.5),
-		BackgroundTransparency = 0,
+		BackgroundTransparency = 0.5,
 		BackgroundColor3 = theme.main_container,
 		BorderSizePixel = 0,
 		Position = UDim2.new(0.5, 0, 0.5, 0),
