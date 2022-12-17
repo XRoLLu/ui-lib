@@ -2201,7 +2201,7 @@ function DiscordLib:Window(text)
 				ToggleTitle.Size = UDim2.new(0, 200, 0, 30)
 				ToggleTitle.Font = Enum.Font.Gotham
 				ToggleTitle.Text = text
-				ToggleTitle.TextColor3 = Color3.fromRGB(127, 131, 137)
+				ToggleTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 				ToggleTitle.TextSize = 14.000
 				ToggleTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -2211,7 +2211,7 @@ function DiscordLib:Window(text)
 				ToggleFrame.Position = UDim2.new(0.900481343, -5, 0.13300018, 0)
 				ToggleFrame.Size = UDim2.new(0, 40, 0, 21)
 
-				ToggleFrameCorner.CornerRadius = UDim.new(1, 8)
+				ToggleFrameCorner.CornerRadius = UDim.new(0.5, 0)
 				ToggleFrameCorner.Name = "ToggleFrameCorner"
 				ToggleFrameCorner.Parent = ToggleFrame
 
@@ -2221,7 +2221,7 @@ function DiscordLib:Window(text)
 				ToggleFrameCircle.Position = UDim2.new(0.234999999, -5, 0.133000001, 0)
 				ToggleFrameCircle.Size = UDim2.new(0, 15, 0, 15)
 
-				ToggleFrameCircleCorner.CornerRadius = UDim.new(1, 0)
+				ToggleFrameCircleCorner.CornerRadius = UDim.new(0.5, 0)
 				ToggleFrameCircleCorner.Name = "ToggleFrameCircleCorner"
 				ToggleFrameCircleCorner.Parent = ToggleFrameCircle
 
@@ -2241,12 +2241,12 @@ function DiscordLib:Window(text)
 						TweenService:Create(
 							Icon,
 							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{ImageColor3 = Color3.fromRGB(67,181,129)}
+							{ImageColor3 = Color3.fromRGB(0, 255, 30)}
 						):Play()
 						TweenService:Create(
 							ToggleFrame,
 							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{BackgroundColor3 = Color3.fromRGB(67,181,129)}
+							{BackgroundColor3 = Color3.fromRGB(0, 255, 30)}
 						):Play()
 						ToggleFrameCircle:TweenPosition(UDim2.new(0.655, -5, 0.133000001, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 						TweenService:Create(
