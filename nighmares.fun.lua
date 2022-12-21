@@ -50,7 +50,6 @@ end
 
 function Fun.Create(title)
     local nightmarefun = Instance.new("ScreenGui")
-    local Shadow = Instance.new("ImageLabel")
     local mainFrame = Instance.new("Frame")
     local mainCorner = Instance.new("UICorner")
     local mainSide = Instance.new("Frame")
@@ -63,20 +62,12 @@ function Fun.Create(title)
     local allPages = Instance.new("Frame")
     local pages = Instance.new("Folder")
 
-    Fun:DraggingEnabled(mainFrame, Shadow)
+    Fun:DraggingEnabled(mainFrame)
     nightmarefun.Name = "nightmarefun"
     nightmarefun.Parent = game.CoreGui
     nightmarefun.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     nightmarefun.ResetOnSpawn = false
 
-    Shadow.Name = "Shadow"
-    Shadow.Parent = nightmarefun
-    Shadow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    Shadow.BackgroundTransparency = 1.000
-    Shadow.Position = UDim2.new(0.349795759, 0, 0.171759665, 0)
-    Shadow.Size = UDim2.new(0, 525, 0, 468)
-    Shadow.Image = "http://www.roblox.com/asset/?id=6105530152"
-    Shadow.ImageColor3 = Color3.fromRGB(18, 18, 18)
 
     mainFrame.Name = "mainFrame"
     mainFrame.Parent = Shadow
@@ -90,7 +81,7 @@ function Fun.Create(title)
 
     mainSide.Name = "mainSide"
     mainSide.Parent = mainFrame
-    mainSide.BackgroundColor3 = Color3.fromRGB(9, 81, 214)
+    mainSide.BackgroundColor3 = Color3.fromRGB(9, 81, 170)
     mainSide.Size = UDim2.new(0, 166, 0, 396)
 
     UICorner.CornerRadius = UDim.new(0, 6)
@@ -135,7 +126,7 @@ function Fun.Create(title)
 
     cover.Name = "cover"
     cover.Parent = mainSide
-    cover.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+    cover.BackgroundColor3 = Color3.fromRGB(9, 81, 170)
     cover.BorderSizePixel = 0
     cover.Position = UDim2.new(0.949999988, 0, 0, 0)
     cover.Size = UDim2.new(0, 9, 0, 396)
@@ -272,7 +263,7 @@ function Fun.Create(title)
 
             sectionCircle.Name = "sectionCircle"
             sectionCircle.Parent = sectionFrameHead
-            sectionCircle.BackgroundColor3 = Color3.fromRGB(82, 82, 98)
+            sectionCircle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
             sectionCircle.Position = UDim2.new(0.0354609936, 0, 0.388888896, 0)
             sectionCircle.Size = UDim2.new(0, 7, 0, 7)
 
@@ -286,7 +277,7 @@ function Fun.Create(title)
             TextLabel.Size = UDim2.new(0, 173, 0, 22)
             TextLabel.Font = Enum.Font.Gotham
             TextLabel.Text = sectionName
-            TextLabel.TextColor3 = Color3.fromRGB(82, 82, 98)
+            TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
             TextLabel.TextSize = 14.000
             TextLabel.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -308,13 +299,13 @@ function Fun.Create(title)
                     sectionFrame:TweenSize(UDim2.new(0.956, 0,0, 36), "In", "Linear", 0.10)
                     game.TweenService:Create(closeSection, TweenInfo.new(0.10, Enum.EasingStyle.Quad, Enum.EasingDirection.In),{
                         Rotation = 0,
-                        ImageColor3 = Color3.fromRGB(82, 82, 98)
+                        ImageColor3 = Color3.fromRGB(176, 0, 0)
                     }):Play()
                     game.TweenService:Create(sectionCircle, TweenInfo.new(0.10, Enum.EasingStyle.Quad, Enum.EasingDirection.In),{
-                        BackgroundColor3 = Color3.fromRGB(82, 82, 98)
+                        BackgroundColor3 = Color3.fromRGB(2, 62, 97)
                     }):Play()
                     game.TweenService:Create(TextLabel, TweenInfo.new(0.10, Enum.EasingStyle.Quad, Enum.EasingDirection.In),{
-                        TextColor3 = Color3.fromRGB(82, 82, 98)
+                        TextColor3 = Color3.fromRGB(255, 255, 255)
                     }):Play()
                     wait(0.10)
                     UpdateSize()
@@ -322,14 +313,14 @@ function Fun.Create(title)
                     isDropped = true
                     sectionFrame:TweenSize(UDim2.new(0.956,0, 0, sectionListLayout.AbsoluteContentSize.Y + 8), "In", "Linear", 0.10)
                     game.TweenService:Create(closeSection, TweenInfo.new(0.10, Enum.EasingStyle.Quad, Enum.EasingDirection.In),{
-                        Rotation = 180,
-                        ImageColor3 = Color3.fromRGB(200, 200, 200)
+                        Rotation = 90
+                        ImageColor3 = Color3.fromRGB(0, 176, 0)
                     }):Play()
                     game.TweenService:Create(sectionCircle, TweenInfo.new(0.10, Enum.EasingStyle.Quad, Enum.EasingDirection.In),{
-                        BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+                        BackgroundColor3 = Color3.fromRGB(0, 92, 145)
                     }):Play()
                     game.TweenService:Create(TextLabel, TweenInfo.new(0.10, Enum.EasingStyle.Quad, Enum.EasingDirection.In),{
-                        TextColor3 = Color3.fromRGB(200, 200, 200)
+                        TextColor3 = Color3.fromRGB(255, 255, 255)
                     }):Play()
                     wait(0.10)
                     UpdateSize()
@@ -465,7 +456,7 @@ function Fun.Create(title)
 
                 checkBox.Name = "checkBox"
                 checkBox.Parent = toggleFrame
-                checkBox.BackgroundColor3 = Color3.fromRGB(47, 47, 56)
+                checkBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                 checkBox.BackgroundTransparency = 1.000
                 checkBox.Position = UDim2.new(-0.0381679386, 0, 0.0263157934, 0)
                 checkBox.Size = UDim2.new(0, 25, 0, 25)
@@ -483,7 +474,7 @@ function Fun.Create(title)
 
                 checkBoxInfo.Name = "checkBoxInfo"
                 checkBoxInfo.Parent = toggleFrame
-                checkBoxInfo.BackgroundColor3 = Color3.fromRGB(47, 47, 56)
+                checkBoxInfo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                 checkBoxInfo.BackgroundTransparency = 1.000
                 checkBoxInfo.Position = UDim2.new(0.106870227, 0, -0.157894731, 0)
                 checkBoxInfo.Size = UDim2.new(0, 200, 0, 19)
@@ -498,11 +489,11 @@ function Fun.Create(title)
                 checkBox.MouseEnter:Connect(function()
                     if not tog then
                         game.TweenService:Create(checkBox, TweenInfo.new(0.08, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut), {
-                            ImageColor3 = Color3.fromRGB(53, 53, 63)
+                            ImageColor3 = Color3.fromRGB(255, 255, 255)
                         }):Play()
                     else
                         game.TweenService:Create(checkBox, TweenInfo.new(0.08, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut), {
-                            ImageColor3 = Color3.fromRGB(69, 68, 69)
+                            ImageColor3 = Color3.fromRGB(255, 255, 255)
                         }):Play()
                     end
                 end)
@@ -511,12 +502,12 @@ function Fun.Create(title)
                     if not tog then
                         checkBox.Parent:TweenSize(UDim2.new(0, 262,0, 25), "InOut", "Linear", 0.08)
                         game.TweenService:Create(checkBox, TweenInfo.new(0.08, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut), {
-                            ImageColor3 = Color3.fromRGB(62, 62, 74)
+                            ImageColor3 = Color3.fromRGB(255, 255, 255)
                         }):Play()
                     else
                         checkBox.Parent:TweenSize(UDim2.new(0, 262,0, 25), "InOut", "Linear", 0.08)
                         game.TweenService:Create(checkBox, TweenInfo.new(0.08, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut), {
-                            ImageColor3 = Color3.fromRGB(11, 186, 69)
+                            ImageColor3 = Color3.fromRGB(0, 85, 255)
                         }):Play()
                     end
                 end)
@@ -540,11 +531,11 @@ function Fun.Create(title)
                         callback(tog)
                         if tog then
                             game.TweenService:Create(checkBox.Parent.checkBoxInfo, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut), {
-                                TextColor3 = Color3.fromRGB(255, 255, 255)
+                                TextColor3 = Color3.fromRGB(0, 200, 255)
                             }):Play()
                             checkBox.ImageRectOffset = Vector2.new(4, 836)
                             game.TweenService:Create(checkBox, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut), {
-                                ImageColor3 = Color3.fromRGB(11, 186, 69)
+                                ImageColor3 = Color3.fromRGB(0, 85, 255)
                             }):Play()
                         else
                             game.TweenService:Create(checkBox.Parent.checkBoxInfo, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut), {
