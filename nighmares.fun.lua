@@ -50,6 +50,7 @@ end
 
 function Fun.Create(title)
     local nightmarefun = Instance.new("ScreenGui")
+    local Shadow = Instance.new("ImageLabel")
     local mainFrame = Instance.new("Frame")
     local mainCorner = Instance.new("UICorner")
     local mainSide = Instance.new("Frame")
@@ -68,7 +69,15 @@ function Fun.Create(title)
     nightmarefun.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     nightmarefun.ResetOnSpawn = false
 
-
+    Shadow.Name = "Shadow"
+    Shadow.Parent = nightmarefun
+    Shadow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Shadow.BackgroundTransparency = 1.000
+    Shadow.Position = UDim2.new(0.349795759, 0, 0.171759665, 0)
+    Shadow.Size = UDim2.new(0, 525, 0, 468)
+    Shadow.Image = "http://www.roblox.com/asset/?id=6105530152"
+    Shadow.ImageColor3 = Color3.fromRGB(18, 18, 18)
+	
     mainFrame.Name = "mainFrame"
     mainFrame.Parent = Shadow
     mainFrame.BackgroundColor3 = Color3.fromRGB(8, 58, 150)
