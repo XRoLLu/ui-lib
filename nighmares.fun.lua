@@ -313,7 +313,7 @@ function Fun.Create(title)
                     isDropped = true
                     sectionFrame:TweenSize(UDim2.new(0.956,0, 0, sectionListLayout.AbsoluteContentSize.Y + 8), "In", "Linear", 0.10)
                     game.TweenService:Create(closeSection, TweenInfo.new(0.10, Enum.EasingStyle.Quad, Enum.EasingDirection.In),{
-                        Rotation = 90,
+                        Rotation = 180,
                         ImageColor3 = Color3.fromRGB(0, 170, 0)
                     }):Play()
                     game.TweenService:Create(sectionCircle, TweenInfo.new(0.10, Enum.EasingStyle.Quad, Enum.EasingDirection.In),{
