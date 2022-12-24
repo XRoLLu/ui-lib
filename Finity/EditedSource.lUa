@@ -59,15 +59,15 @@ finity.theme = { -- light
 
 finity.dark_theme = {
 	main_container = Color3.fromRGB(16, 16, 41),
-	separator_color = Color3.fromRGB(16, 16, 80),
+	separator_color = Color3.fromRGB(16, 16, 100),
 
-	text_color = Color3.fromRGB(210, 210, 210),
+	text_color = Color3.fromRGB(255, 255, 255),
 
 	category_button_background = Color3.fromRGB(63, 62, 65),
 	category_button_border = Color3.fromRGB(72, 71, 74),
 
-	checkbox_checked = Color3.fromRGB(0, 119, 255),
-	checkbox_outer = Color3.fromRGB(0, 23, 70),
+	checkbox_checked = Color3.fromRGB(0, 234, 255),
+	checkbox_outer = Color3.fromRGB(0, 23, 90),
 	checkbox_inner = Color3.fromRGB(0, 23, 70),
 
 	slider_color = Color3.fromRGB(177, 177, 177),
@@ -230,7 +230,7 @@ function finity.new(isdark, gprojectName, thinProject)
 		BackgroundColor3 = theme.main_container,
 		BorderSizePixel = 0,
 		Position = UDim2.new(0.5, 0, 0.5, 0),
-		Size = UDim2.new(0, 800, 0, 300),
+		Size = UDim2.new(0, 750, 0, 400),
 		ZIndex = 2,
 		ImageTransparency = 0.8
     })
