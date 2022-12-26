@@ -247,7 +247,7 @@ function UILibrary.Load(GUITitle)
 			Tween(ContainerShadow, {ImageTransparency = 1})
 		else
 			Tween(MainFrame, {Size = UDim2.new(1,-50,1,-30)})
-			Tween(MinimiseButton, {Rotation = 90})
+			Tween(MinimiseButton, {Rotation = 180})
 			Tween(ContainerShadow, {ImageTransparency = DropShadowTransparency})
 		end
 	end)
