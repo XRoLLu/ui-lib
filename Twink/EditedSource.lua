@@ -14,7 +14,7 @@ local GlobalTweenInfo = TweenInfo.new(TweenTime)
 local AlteredTweenInfo = TweenInfo.new(TweenTime, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
 
 local DropShadowID = "rbxassetid://297774371"
-local DropShadowTransparency = 1
+local DropShadowTransparency = 0.3
 
 local IconLibraryID = "rbxassetid://3926305904"
 local IconLibraryID2 = "rbxassetid://3926307971"
@@ -247,7 +247,7 @@ function UILibrary.Load(GUITitle)
 			Tween(ContainerShadow, {ImageTransparency = 1})
 		else
 			Tween(MainFrame, {Size = UDim2.new(1,-50,1,-30)})
-			Tween(MinimiseButton, {Rotation = 180})
+			Tween(MinimiseButton, {Rotation = 90})
 			Tween(ContainerShadow, {ImageTransparency = DropShadowTransparency})
 		end
 	end)
@@ -674,7 +674,7 @@ function UILibrary.Load(GUITitle)
 			FlatRight.Size = UDim2.new(0,5,1,0)
 			FlatRight.Parent = ToggleRightSide
 			
-			EffectFrame.BackgroundColor3 = ThisToggle and Color3.fromRGB(0,255,0) or Color3.fromRGB(0,0,0)
+			EffectFrame.BackgroundColor3 = ThisToggle and Color3.fromRGB(0,255,109) or Color3.fromRGB(255,160,160)
 			EffectFrame.Position = UDim2.new(1,-22,0.2,0)
 			EffectFrame.Size = UDim2.new(0,2,0.6,0)
 			EffectFrame.Parent = ToggleContainer
@@ -689,7 +689,7 @@ function UILibrary.Load(GUITitle)
 			
 			ToggleButton.MouseButton1Down:Connect(function()
 				ThisToggle = not ThisToggle
-				Tween(EffectFrame, {BackgroundColor3 = ThisToggle and Color3.fromRGB(0,255,0) or Color3.fromRGB(0,0,0)})
+				Tween(EffectFrame, {BackgroundColor3 = ThisToggle and Color3.fromRGB(0,255,109) or Color3.fromRGB(255,160,160)})
 				Tween(RightTick, {ImageTransparency = ThisToggle and 0 or 1})
 				Callback(ThisToggle)
 			end)	
