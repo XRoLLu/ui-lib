@@ -654,7 +654,6 @@ function UILibrary.Load(GUITitle)
 			ToggleContainer.Size = UDim2.new(1,0,0,20)
 			ToggleContainer.BackgroundTransparency = 1
 			ToggleContainer.Parent = DisplayPage
-            ToggleContainer.TextXAlignment = Enum.TextXAlignment.Left
 			
 			local ToggleLeftSide, ToggleRightSide, EffectFrame, RightTick = RoundBox(5), RoundBox(5), Frame(), TickIcon()
 			local FlatLeft, FlatRight = Frame(), Frame()
@@ -677,7 +676,7 @@ function UILibrary.Load(GUITitle)
 			FlatRight.Size = UDim2.new(0,5,1,0)
 			FlatRight.Parent = ToggleRightSide
 			
-			EffectFrame.BackgroundColor3 = ThisToggle and Color3.fromRGB(0,255,109) or Color3.fromRGB(255,160,160)
+			EffectFrame.BackgroundColor3 = ThisToggle and Color3.fromRGB(0,255,109) or Color3.fromRGB(20,20,20)
 			EffectFrame.Position = UDim2.new(1,-22,0.2,0)
 			EffectFrame.Size = UDim2.new(0,2,0.6,0)
 			EffectFrame.Parent = ToggleContainer
