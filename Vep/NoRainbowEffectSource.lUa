@@ -157,7 +157,7 @@ function VLib:Window(textgame)
 	MainTitle.Parent = LeftFrame
 	MainTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	MainTitle.BackgroundTransparency = 1.000
-	MainTitle.Position = UDim2.new(0.324129045, 0, 0.0512162149, 0)
+	MainTitle.Position = UDim2.new(0.000674468291, 0, 0.0512162149, 0)
 	MainTitle.Size = UDim2.new(0, 71, 0, 20)
 	MainTitle.Font = Enum.Font.Gotham
 	MainTitle.Text = MAINTTL
@@ -169,7 +169,7 @@ function VLib:Window(textgame)
 	GameTitle.Parent = LeftFrame
 	GameTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	GameTitle.BackgroundTransparency = 1.000
-	GameTitle.Position = UDim2.new(0.324129164, 0, 0.0892162398, 0)
+	GameTitle.Position = UDim2.new(0.000674468291, 0, 0.0892162398, 0)
 	GameTitle.Size = UDim2.new(0, 71, 0, 20)
 	GameTitle.Font = Enum.Font.Gotham
 	GameTitle.Text = textgame
