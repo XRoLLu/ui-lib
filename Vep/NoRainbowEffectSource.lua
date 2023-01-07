@@ -160,7 +160,7 @@ function VLib:Window(textgame)
 	MainTitle.Position = UDim2.new(0.000674468291, 0, 0.0512162149, 0)
 	MainTitle.Size = UDim2.new(0, 71, 0, 20)
 	MainTitle.Font = Enum.Font.Gotham
-	MainTitle.Text = "   ".. MAINTTL
+	MainTitle.Text = "    ".. MAINTTL
 	MainTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 	MainTitle.TextSize = 14.000
 	MainTitle.TextXAlignment = Enum.TextXAlignment.Left
@@ -172,7 +172,7 @@ function VLib:Window(textgame)
 	GameTitle.Position = UDim2.new(0.000674468291, 0, 0.0892162398, 0)
 	GameTitle.Size = UDim2.new(0, 71, 0, 20)
 	GameTitle.Font = Enum.Font.Gotham
-	GameTitle.Text = "   ".. textgame
+	GameTitle.Text = "    ".. textgame
 	GameTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 	GameTitle.TextSize = 14.000
 	GameTitle.TextTransparency = 0.400
@@ -219,7 +219,7 @@ function VLib:Window(textgame)
 
 		Tab.Name = "Tab"
 		Tab.Parent = TabHolder
-		Tab.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+		Tab.BackgroundColor3 = Color3.fromRGB(0, 162, 204)
 		Tab.Size = UDim2.new(0, 159, 0, 29)
 		Tab.AutoButtonColor = false
 		Tab.Font = Enum.Font.SourceSans
@@ -396,7 +396,7 @@ function VLib:Window(textgame)
 
 			ToggleFrameRainbow.Name = "ToggleFrameRainbow"
 			ToggleFrameRainbow.Parent = ToggleFrame
-			ToggleFrameRainbow.BackgroundColor3 = Color3.fromRGB(0, 162, 202)
+			ToggleFrameRainbow.BackgroundColor3 = Color3.fromRGB(0, 162, 255)
 			ToggleFrameRainbow.BackgroundTransparency = 1.000
 			ToggleFrameRainbow.Position = UDim2.new(-0.0198377371, 0, 0.00601506233, 0)
 			ToggleFrameRainbow.Size = UDim2.new(0, 36, 0, 19)
@@ -703,7 +703,7 @@ function VLib:Window(textgame)
 						)
 						TweenService:Create(
 							Arrow,
-							TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 							{Rotation = 180}
 						):Play()
 						repeat
