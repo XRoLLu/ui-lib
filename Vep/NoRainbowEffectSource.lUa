@@ -160,7 +160,7 @@ function VLib:Window(textgame)
 	MainTitle.Position = UDim2.new(0.000674468291, 0, 0.0512162149, 0)
 	MainTitle.Size = UDim2.new(0, 71, 0, 20)
 	MainTitle.Font = Enum.Font.Gotham
-	MainTitle.Text = "   ", MAINTTL
+	MainTitle.Text = "   ".. MAINTTL
 	MainTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 	MainTitle.TextSize = 14.000
 	MainTitle.TextXAlignment = Enum.TextXAlignment.Left
@@ -172,7 +172,7 @@ function VLib:Window(textgame)
 	GameTitle.Position = UDim2.new(0.000674468291, 0, 0.0892162398, 0)
 	GameTitle.Size = UDim2.new(0, 71, 0, 20)
 	GameTitle.Font = Enum.Font.Gotham
-	GameTitle.Text = "   ", textgame
+	GameTitle.Text = "   ".. textgame
 	GameTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 	GameTitle.TextSize = 14.000
 	GameTitle.TextTransparency = 0.400
