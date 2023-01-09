@@ -1,5 +1,3 @@
-
-
 local Player = game.Players.LocalPlayer
 local Mouse = Player:GetMouse()
 
@@ -49,7 +47,7 @@ local function TickIcon(ButtonOrNot)
 	NewTickIcon.Name = "TickIcon"
 	NewTickIcon.BackgroundTransparency = 1
 	NewTickIcon.Image = "rbxassetid://3926305904"
-	NewTickIcon.ImageRectOffset = Vector2.new(404, 284)
+	NewTickIcon.ImageRectOffset = Vector2.new(312,4)
 	NewTickIcon.ImageRectSize = Vector2.new(24,24)
 	NewTickIcon.Size = UDim2.new(1,-6,1,-6)
 	NewTickIcon.Position = UDim2.new(0,3,0,3)
@@ -183,7 +181,7 @@ function UILibrary.Load(GUITitle)
 	
 	ContainerFrame = Frame()
 	ContainerFrame.Name = "ContainerFrame"
-	ContainerFrame.Size = UDim2.new(0,500,0,300)
+	ContainerFrame.Size = UDim2.new(0,550,0,300)
 	ContainerFrame.Position = UDim2.new(0.5,-250,0.5,-150)
 	ContainerFrame.BackgroundTransparency = 1
 	ContainerFrame.Parent = NewInstance
@@ -428,7 +426,7 @@ function UILibrary.Load(GUITitle)
 			
 			local LabelForeground = RoundBox(5)
 			LabelForeground.Name = "LabelForeground"
-			LabelForeground.ImageColor3 = Color3.fromRGB(50,50,50)
+			LabelForeground.ImageColor3 = Color3.fromRGB(45,45,45)
 			LabelForeground.Size = UDim2.new(1,0,1,0)
 			LabelForeground.Parent = LabelContainer
 			
@@ -676,7 +674,7 @@ function UILibrary.Load(GUITitle)
 			FlatRight.Size = UDim2.new(0,5,1,0)
 			FlatRight.Parent = ToggleRightSide
 			
-			EffectFrame.BackgroundColor3 = ThisToggle and Color3.fromRGB(0,255,109) or Color3.fromRGB(20,20,20)
+			EffectFrame.BackgroundColor3 = ThisToggle and Color3.fromRGB(0,255,109) or Color3.fromRGB(255,160,160)
 			EffectFrame.Position = UDim2.new(1,-22,0.2,0)
 			EffectFrame.Size = UDim2.new(0,2,0.6,0)
 			EffectFrame.Parent = ToggleContainer
