@@ -2143,4 +2143,4 @@ function SomeLib:Window(text,mainclr,cls)
 	end
 	return ServerHold
 end
-
+return SomeLib
