@@ -197,7 +197,7 @@ function SomeLib:Window(text,mainclr,cls)
 
 	TopFrame.Name = "TopFrame"
 	TopFrame.Parent = MainFrame
-	TopFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+	TopFrame.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
 	TopFrame.BackgroundTransparency = 1.000
 	TopFrame.BorderSizePixel = 0
 	TopFrame.Position = UDim2.new(-0.000658480625, 0, 0, 0)
@@ -205,7 +205,7 @@ function SomeLib:Window(text,mainclr,cls)
 
 	TopFrameHolder.Name = "TopFrameHolder"
 	TopFrameHolder.Parent = TopFrame
-	TopFrameHolder.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
+	TopFrameHolder.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
 	TopFrameHolder.BackgroundTransparency = 1.000
 	TopFrameHolder.BorderSizePixel = 0
 	TopFrameHolder.Position = UDim2.new(-0.000658480625, 0, 0, 0)
