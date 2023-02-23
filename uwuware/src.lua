@@ -96,6 +96,7 @@ local function createOptionHolder(holderTitle, parent, parentTable, subHolder)
 		Text = holderTitle,
 		TextSize = subHolder and 16 or 17,
 		Font = Enum.Font.GothamBold,
+		TextXAlignment = Enum.TextXAlignment.Left,
 		TextColor3 = Color3.fromRGB(255, 255, 255),
 		Parent = parentTable.main
 	})
