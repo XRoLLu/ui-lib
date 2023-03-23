@@ -5,8 +5,8 @@
 --basically i remove the rainbow effect on this source
 --i also remove the icon thing cuz i hate it :)
 
-if game.CoreGui:FindFirstChild("STUPID TRASH VEP LIB THAT I EDITED FOR BECOME BEUTIFUL... kinda lol") then
-	game.CoreGui:FindFirstChild("STUPID TRASH VEP LIB THAT I EDITED FOR BECOME BEUTIFUL... kinda lol"):remove()
+if game.CoreGui:FindFirstChild("vep") then
+	game.CoreGui:FindFirstChild("vep"):remove()
 end
 
 local VLib = {RainbowColorValue = 0, HueSelectionPosition = 0}
